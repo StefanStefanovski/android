@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/NomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/PrenomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/NumeroEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/Valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider" />
+
+        <TextView
+            android:id="@+id/compteurText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bouttonFichier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visualiser contacts de fichier" />
+
+        <Button
+            android:id="@+id/boutonBdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visualiser contacts de bdd" />
+
+        <Button
+            android:id="@+id/boutonStartService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demmarer Service" />
+
+        <Button
+            android:id="@+id/boutonStopService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arreter le service" />
+
+        <Button
+            android:id="@+id/ajoutFichier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter dans fichier" />
+
+        <Button
+            android:id="@+id/ajoutBdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter dans BDD" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
