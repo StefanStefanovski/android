@@ -28,6 +28,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Exercice 4" />
+
+        <Button
+            android:id="@+id/Exo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercice 5" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

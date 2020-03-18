@@ -40,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(exo4);
             }
         });
+        Button Exercice5 = (Button)findViewById(R.id.Exo5);
+        Exercice5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent exo5 = new Intent(MainActivity.this,ActivityExo5.class);
+                startActivity(exo5);
+            }
+        });
+
     }
     private void listSensor(){
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
