@@ -33,7 +33,8 @@ public class ActivityExo4 extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        float history[] = new float[2];
+        float history[];
+        history = new float[2];
         float xChange = history[0] - event.values[0];
         float yChange = history[1] - event.values[1];
 
@@ -42,20 +43,20 @@ public class ActivityExo4 extends AppCompatActivity implements SensorEventListen
         TextView xValue = (TextView)findViewById(R.id.xText);
         TextView yValue = (TextView)findViewById(R.id.yText);
 
-        if (xChange > 2){
+        if (xChange >0){
             xValue.setText("x: LEFT");
             //direction[0] = "LEFT";
         }
-        else if (xChange < -2){
+        else if (xChange < 0){
             xValue.setText("x: RIGHT");
             //direction[0] = "RIGHT";
         }
 
-        if (yChange > 2){
+        if (yChange > 10){
             yValue.setText("y: DOWN");
             //direction[1] = "DOWN";
         }
-        else if (yChange < -2){
+        else if (yChange < 10){
             yValue.setText("y: UP");
             //direction[1] = "UP";
         }
